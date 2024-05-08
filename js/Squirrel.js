@@ -4,7 +4,8 @@
 // -color - one from ['red', 'gray', 'rainbow']
 // -jump() // return '${this.name} jumping'
 
-const POSSIBLE_COLORS = ['red', 'gray', 'rainbow']; // Виймати з методу та залишати їх ДО класа = робити клас брудним..
+// Виймати з методу та залишати їх ДО класа = робити клас брудним..
+const POSSIBLE_SQUIRREL_COLORS = ['red', 'gray', 'rainbow']; 
 
 /**
  * Клас, який реалізує білку
@@ -41,10 +42,10 @@ class Squirrel {
     if (typeof color !== 'string') {
       throw TypeError('Color must be string type!');
     }
-    if(POSSIBLE_COLORS.includes(color) === false) {
+    if(POSSIBLE_SQUIRREL_COLORS.includes(color) === false) {
       throw RangeError('Color value is not one from ["red", "gray", "rainbow"]!');
     }
-    
+
     this._color = color;
   }
   /**
