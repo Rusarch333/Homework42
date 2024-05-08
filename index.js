@@ -1,13 +1,13 @@
 'use strict';
 
-const SQUIRREL_NAME = 'Shustrik';
+const SQUIRREL_NAME = 'Krasavchik';
 const SQUIRREL_COLOR = 'red';
 
-const FLY_SQUIRREL_NAME = "Mimi";
+const FLY_SQUIRREL_NAME = "Pushistik";
 const FLY_SQUIRREL_COLOR = 'gray';
 const FLY_SQUIRREL__MAX_JUMP_LENGTH = 65;
 
-const MAGIC_SQUIRREL_NAME = 'Snegok';
+const MAGIC_SQUIRREL_NAME = 'Shustrik';
 const MAGIC_SQUIRREL_COLOR = 'rainbow';
 const MAGIC_SQUIRREL__MAX_JUMP_LENGTH = 85;
 const SQUIRREL_WORDS = ['I', 'am', 'a', 'magic', 'squirrel'];
