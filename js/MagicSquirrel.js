@@ -33,7 +33,7 @@ class MagicSquirrel extends FlySquirrel {
   }
   set words(words) {
     if (Array.isArray(words) === false) {
-      throw TypeError("Words must be array!");
+      throw new TypeError("Words must be array!");
     }
 
     this._words = words;

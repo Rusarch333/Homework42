@@ -19,7 +19,7 @@ class FlySquirrel extends Squirrel {
    */
   constructor (name, color, maxFlyLength) {
     // ЄДИНЕ місце без "_"!
-    
+
     super(name, color);
     
     this.maxFlyLength = maxFlyLength;
@@ -30,10 +30,10 @@ class FlySquirrel extends Squirrel {
   }
   set maxFlyLength(length) {
     if (typeof length !== 'number') {
-      throw TypeError('Max fly length must be number type!');
+      throw new TypeError('Max fly length must be number type!');
     }
     if (length <= 50) {
-      throw RangeError('Max fly length must be more then 50!');
+      throw new RangeError('Max fly length must be more then 50!');
     }
 
     this._maxFlyLength = length;

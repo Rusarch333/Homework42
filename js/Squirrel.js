@@ -27,10 +27,10 @@ class Squirrel {
   }
   set name(name) {
     if (typeof name !== 'string') {
-      throw TypeError('Name must be string type!');
+      throw new TypeError('Name must be string type!');
     }
     if (name.length < 3) {
-      throw Error('Name must have 3 and more symbols!');
+      throw new Error('Name must have 3 and more symbols!');
     }
 
     this._name = name;
@@ -41,10 +41,10 @@ class Squirrel {
   }
   set color(color) {
     if (typeof color !== 'string') {
-      throw TypeError('Color must be string type!');
+      throw new TypeError('Color must be string type!');
     }
     if(POSSIBLE_SQUIRREL_COLORS.includes(color) === false) {
-      throw RangeError('Color value is not one from ["red", "gray", "rainbow"]!');
+      throw new RangeError('Color value is not one from ["red", "gray", "rainbow"]!');
     }
 
     this._color = color;
