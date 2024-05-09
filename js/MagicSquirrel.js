@@ -21,6 +21,8 @@ class MagicSquirrel extends FlySquirrel {
    * @param {string[]} words
    */
   constructor (name, color, maxFlyLength, words) {
+    // ЄДИНЕ місце без "_"!
+
     super(name, color, maxFlyLength);
 
     this.words = words;

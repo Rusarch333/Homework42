@@ -18,6 +18,8 @@ class FlySquirrel extends Squirrel {
    * @param {number} maxFlyLength 
    */
   constructor (name, color, maxFlyLength) {
+    // ЄДИНЕ місце без "_"!
+    
     super(name, color);
     
     this.maxFlyLength = maxFlyLength;

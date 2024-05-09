@@ -16,6 +16,8 @@ class Squirrel {
    * @param {string} color 
    */
   constructor (name, color) {
+    // ЄДИНЕ місце без "_"!
+
     this.name = name;
     this.color = color;
   }
