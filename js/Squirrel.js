@@ -4,13 +4,12 @@
 // -color - one from ['red', 'gray', 'rainbow']
 // -jump() // return '${this.name} jumping'
 
-// Виймати з методу та залишати їх ДО класа = робити клас брудним..
-const POSSIBLE_SQUIRREL_COLORS = ['red', 'gray', 'rainbow']; 
-
 /**
  * Клас, який реалізує білку
  */
 class Squirrel {
+  static POSSIBLE_SQUIRREL_COLORS = ['red', 'gray', 'rainbow'];
+
   /**
    * Конструктор класа Squirrel
    * @param {string} name 
@@ -53,6 +52,6 @@ class Squirrel {
    * @returns {string}
    */
   jump() {
-    return `${this.name} jumping`;
+    return `${this._name} jumping`;
   }
 }

@@ -42,6 +42,6 @@ class FlySquirrel extends Squirrel {
    * @returns {string}
    */
   fly() {
-    return `${this.name} flying at max length ${this.maxFlyLength}`;
+    return `${this._name} flying at max length ${this._maxFlyLength}`;
   }
 }

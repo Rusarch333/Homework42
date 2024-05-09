@@ -42,6 +42,6 @@ class MagicSquirrel extends FlySquirrel {
    * @returns {string}
    */
   say() {
-    return this.words.join(" ");
+    return this._words.join(" ");
   }
 }
